@@ -15,13 +15,10 @@ function App() {
       <section id="Services">
         <Parallax type="services" />
       </section>
-      <section>Services</section>
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section>Portfolio2</section>
-      <section>Portfolio3</section>
       <section id="Contact">
         <Contact />
       </section>
