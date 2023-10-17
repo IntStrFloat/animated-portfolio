@@ -1,0 +1,63 @@
+.hero{
+    height: calc(100dvh - 100px);
+    font-family: "DM Sans" sans-serif;
+    overflow: hidden;
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    position: relative;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        
+        margin: auto;
+        .textContainer{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            h2{
+                font-size: 30px;
+                color: rebeccapurple;
+                letter-spacing: 10px;
+            }
+            h1{
+                font-size: 88px;
+            }
+            img{
+                width: 50px;
+            }
+            .buttons{
+                z-index: 10;
+                button {
+                    padding: 20px;
+                    border: 1px solid white;
+                    color: white;
+                    border-radius: 10px;
+                    background: transparent;
+                    margin-right:20px;
+                    font-weight: 300;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+
+    .slederTextContainer{
+        font-size: 50vh;
+        position: absolute;
+        bottom: -120px;
+        color: #ffffff09;
+        font-weight: bold;
+        width: 50%;
+        white-space: nowrap;
+    }
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

@@ -1,13 +1,6 @@
 import { motion } from 'framer-motion';
 import './toggleButton.scss';
-import {
-  ButtonHTMLAttributes,
-  DetailedHTMLProps,
-  Dispatch,
-  FC,
-  SetStateAction,
-  useEffect,
-} from 'react';
+import { ButtonHTMLAttributes, DetailedHTMLProps, Dispatch, FC, SetStateAction } from 'react';
 
 interface ToggleButtonProps
   extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
@@ -15,11 +8,7 @@ interface ToggleButtonProps
   open: boolean;
 }
 
-export const ToggleButton: FC<ToggleButtonProps> = ({ setOpen, open }) => {
-  const variants = {
-    visible: {},
-    hidden: {},
-  };
+export const ToggleButton: FC<ToggleButtonProps> = ({ setOpen }) => {
   return (
     <button className="burgerButton" onClick={() => setOpen((state) => !state)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
