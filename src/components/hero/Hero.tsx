@@ -25,10 +25,9 @@ const textVariants = {
 const scrollVariants = {
   initial: { x: 0 },
   animate: {
-    x: '-490%',
+    x: -4900,
     transition: {
-      repeatType: 'mirror',
-      repeat: Infinity,
+      loop: Infinity,
       duration: 40,
     },
   },
