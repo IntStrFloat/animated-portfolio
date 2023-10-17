@@ -1,5 +1,4 @@
-import { FC, useRef } from 'react';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { FC } from 'react';
 import './contact.scss';
 export const Contact: FC = () => {
   return (
